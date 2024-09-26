@@ -451,4 +451,3 @@ public class Node implements Comparable<Node>{
         // The file would be 55.12820512820513% smaller using our compression
     }
 }
-
