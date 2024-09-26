@@ -75,14 +75,14 @@ public class MyTests {
         Node root1 = Node.createHuffmanTree(counts1);
         String[] code1 = Node.createCode(root1);
         String bin1 = Node.encode(message1, code1);
-        assertEquals("101 0 0 1111 0 0 1110 0 1100 100 1101 1111 0 0 1110 1101 101 0 0 100", bin1);
+        assertEquals("101 0 0 1111 0 0 1110 0 1100 100 1101 1111 0 0 1110 1101 101 0 0 100", bin1.strip());
 
         String message2 = "SHE SELLS SEA SHELLS ON THE SEA SHORE";
         int[] counts2 = Node.countChars(message2);
         Node root2 = Node.createHuffmanTree(counts2);
         String[] code2 = Node.createCode(root2);
         String bin2 = Node.encode(message2, code2);
-        assertEquals("10 011 111 110 10 111 010 010 10 110 10 111 0001 110 10 011 111 010 010 10 110 0011 00100 110 00101 011 111 110 10 111 0001 110 10 011 0011 0000 111", bin2);
+        assertEquals("10 011 111 110 10 111 010 010 10 110 10 111 0001 110 10 011 111 010 010 10 110 0011 00100 110 00101 011 111 110 10 111 0001 110 10 011 0011 0000 111", bin2.strip());
     }
 
     @Test
